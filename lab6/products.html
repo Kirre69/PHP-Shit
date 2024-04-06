@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style>
-            table, th, td {
-                border: 2px solid black;
-                border-collapse: collapse;
-            }
-            div, li, th, td, caption {
-                font-size: 110%;
-            }
-        </style>
-        <meta charset="utf-8">
-        <title>Products</title>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="openinghours.html">Opening hours</a></li>
-                <li><a href="products.html">Products</a></li>
-            </ul>
-        </nav>
-        <h1>Our products</h1>
-        <div>
-        <p>Below you will find a table of our products</p>
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="media/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="openinghours.html">Opening hours</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="column">
+          <div>
+          <h1>Products</h1>
+          <p>Here are the products that I sell.</p>
+          <table border="1">
+            <tr>
+              <th>Product</th>
+              <th>Description</th>
+              <th>Colour</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Milk</td>
+              <td>Straight from a cow</td>
+              <td rowspan="2">White</td>
+              <td>€ 1.80</td>
+            </tr>
+            <tr>
+              <td>Cake</td>
+              <td>Made fresh everyday</td>
+              <td>€ 12.50</td>
+            </tr>
+            <tr>
+              <td>Medjool Dates</td>
+              <td>Straight from radioactive Morocco</td>
+              <td>Green</td>
+              <td>€ 9.50</td>
+            </tr>
+          </table>
+          </div>
         </div>
-        <table>
-            <caption style="text-align: center;">
-                <b>Products available at the moment</b>
-            </caption>
-            <tr>
-                <th>Product</th>
-                <th>Description</th>
-                <th>Color</th>
-                <th>Price (€)</th>
-            </tr>
-            <tr>
-                <td>Bread 400g</td>
-                <td>Made form pure wheat.</td>
-                <td rowspan="2">White</td>
-                <td rowspan="2">2,50</td>
-            </tr>
-            <tr>
-                <td>Milk 1L</td>
-                <td>Pasteurized milk from cows raised on pasture.</td>
-            </tr>
-            <tr>
-                <td>Chocolate cake 300g</td>
-                <td>Chocolate cake topped with hazelnuts.</td>
-                <td>Dark brown</td>
-                <td>13,50</td>
-            </tr>
-        </table>
-    </body>
+        <div class="column">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              blandit sapien. Curabitur sed elit nec nulla maximus sollicitudin
+              id id elit. Proin varius risus vel cursus vulputate. Phasellus
+              varius accumsan lectus, sed feugiat libero ullamcorper quis. Sed
+              posuere ac nisi in bibendum. Morbi mi arcu, mattis sed consequat
+              non, cursus id massa. Donec vehicula porttitor nisl, sed consequat
+              nulla elementum id. Morbi malesuada porta lacus, suscipit eleifend
+              neque porta at.
+            </p>
+          </div>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+    </div>
+  </body>
 </html>

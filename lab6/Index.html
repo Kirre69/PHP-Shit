@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style>
-            div, li {
-                font-size: 110%;
-            }
-        </style>
-        <meta charset="utf-8">
-        <title>Alice's shop</title>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="openinghours.html">Opening hours</a></li>
-                <li><a href="products.html">Products</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to Alice's Shop</h1>
-        <div>
-        <p>This is the website of my shop. Here you will find information about our opening hours and products by clicking on them. They are located at the top of the page.</p>
-        <p>If you would like to visit our shop it is located on:
-        <br>
-        <strong>Leet Street 1337</strong>.</p>
+  <head>
+    <meta charset="utf-8">
+    <title>Alice's Store</title>
+    <link rel="stylesheet" href="media/css/styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="openinghours.html">Opening hours</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="column">
+          <div>
+            <h1>Welcome to Alice's Store</h1>
+            <p>
+              I sells technical devices for health tracking and smart homes. On
+              the top of the page you can navigate to different information such
+              as products and opening hours.
+            </p>
+            <p>
+              If you would like to visit our shop, it is located on:
+              <strong>Leet Street 1337, Birmingham</strong>
+            </p>
+            <p><a href="https://google.com">Google</a></p>
+          </div>
         </div>
-    </body>
+        <div class="column">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              blandit sapien. Curabitur sed elit nec nulla maximus sollicitudin
+              id id elit. Proin varius risus vel cursus vulputate. Phasellus
+              varius accumsan lectus, sed feugiat libero ullamcorper quis. Sed
+              posuere ac nisi in bibendum. Morbi mi arcu, mattis sed consequat
+              non, cursus id massa. Donec vehicula porttitor nisl, sed consequat
+              nulla elementum id. Morbi malesuada porta lacus, suscipit eleifend
+              neque porta at.
+            </p>
+          </div>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+    </div>
+  </body>
 </html>
